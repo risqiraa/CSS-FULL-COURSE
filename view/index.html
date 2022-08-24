@@ -2,24 +2,24 @@
 <html>
   <head>
     <style>
-      div {
-        border: 1px solid red;
-        margin-left: 100px;
+      h1 {
+        margin: 0 0 50px 0;
       }
 
-      p.ex1 {
-        margin-left: inherit;
+      h2 {
+        margin: 20px 0 0 0;
       }
     </style>
   </head>
   <body>
-    <h2>Use of the inherit value</h2>
-    <p>Let the left margin be inherited from the parent element:</p>
+    <p>
+      In this example the h1 element has a bottom margin of 50px and the h2
+      element has a top margin of 20px. So, the vertical margin between h1 and
+      h2 should have been 70px (50px + 20px). However, due to margin collapse,
+      the actual margin ends up being 50px.
+    </p>
 
-    <div>
-      <p class="ex1">
-        This paragraph has an inherited left margin (from the div element).
-      </p>
-    </div>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
   </body>
 </html>
