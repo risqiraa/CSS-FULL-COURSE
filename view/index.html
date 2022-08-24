@@ -3,34 +3,26 @@
   <head>
     <style>
       body {
-        text-align: center;
+        text-align: left;
+      }
+      p.border {
+        border: 5px solid red;
+        max-width: 200px;
       }
       /* Four values */
-      p.four {
-        border-style: dotted solid double dashed;
-      }
-
-      /* Three values */
-      p.three {
-        border-style: dotted solid double;
-      }
-
-      /* Two values */
-      p.two {
-        border-style: dotted solid;
-      }
-
-      /* One value */
-      p.one {
-        border-style: dotted;
-      }
     </style>
   </head>
   <body>
-    <h2>Individual Border Sides</h2>
-    <p class="four">4 different border styles.</p>
-    <p class="three">3 different border styles.</p>
-    <p class="two">2 different border styles.</p>
-    <p class="one">1 border style.</p>
+    <h1>
+      The border property is a shorthand property for the following individual
+      border properties:
+    </h1>
+    <ol>
+      <li>border-width</li>
+      <li>border-style (required)</li>
+      <li>border-color</li>
+    </ol>
+    <h2>Contoh</h2>
+    <p class="border">border: 5px solid red;</p>
   </body>
 </html>
