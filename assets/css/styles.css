@@ -1,8 +1,4 @@
-p.center {
-    text-align: center;
-    color: red;
-}
-
-p.large {
-    font-size: 300%;
-}
+ * {
+     text-align: center;
+     color: blue;
+ }
