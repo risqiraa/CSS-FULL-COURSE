@@ -2,33 +2,35 @@
 <html>
   <head>
     <style>
-      p.one {
-        border-style: solid;
-        border-color: red;
+      body {
+        text-align: center;
+      }
+      /* Four values */
+      p.four {
+        border-style: dotted solid double dashed;
       }
 
-      p.two {
-        border-style: solid;
-        border-color: green;
-      }
-
+      /* Three values */
       p.three {
+        border-style: dotted solid double;
+      }
+
+      /* Two values */
+      p.two {
+        border-style: dotted solid;
+      }
+
+      /* One value */
+      p.one {
         border-style: dotted;
-        border-color: blue red yellow green;
       }
     </style>
   </head>
   <body>
-    <h2>The border-color Property</h2>
-    <p>This property specifies the color of the four borders:</p>
-
-    <p class="one">A solid red border</p>
-    <p class="two">A solid green border</p>
-    <p class="three">A dotted blue border</p>
-
-    <p>
-      <b>Note:</b> The "border-color" property does not work if it is used
-      alone. Use the "border-style" property to set the borders first.
-    </p>
+    <h2>Individual Border Sides</h2>
+    <p class="four">4 different border styles.</p>
+    <p class="three">3 different border styles.</p>
+    <p class="two">2 different border styles.</p>
+    <p class="one">1 border style.</p>
   </body>
 </html>
